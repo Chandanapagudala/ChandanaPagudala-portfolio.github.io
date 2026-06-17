@@ -318,6 +318,89 @@
       margin: 0 0 1rem;
       color: var(--muted);
     }
+    /* =========================
+   REPORTS SECTION
+========================= */
+
+.report-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:1.5rem;
+    margin-top:2rem;
+}
+
+.report-card{
+    overflow:hidden;
+    border-radius:24px;
+    background:var(--panel);
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:var(--shadow);
+    transition:all .3s ease;
+}
+
+.report-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(96,165,250,.4);
+}
+
+.report-card img{
+    width:100%;
+    height:auto;
+    display:block;
+    transition:transform .4s ease;
+}
+
+.report-card:hover img{
+    transform:scale(1.03);
+}
+
+.report-info{
+    padding:1rem 1.2rem;
+}
+
+.report-info h3{
+    margin:0 0 .4rem;
+    font-size:1.05rem;
+}
+
+.report-info p{
+    margin:0;
+    color:var(--muted);
+    font-size:.95rem;
+}
+
+/* Report button */
+
+.report-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1rem;
+    padding:.75rem 1rem;
+    border-radius:14px;
+    background:linear-gradient(
+      135deg,
+      var(--accent),
+      #8b5cf6
+    );
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.report-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .report-gallery{
+        grid-template-columns:1fr;
+    }
+
+}
 
     .contact-list {
       display: grid;
@@ -464,14 +547,14 @@ Recent M.S. Computer Science graduate from Auburn University at Montgomery with 
     </div>
         <aside class="card profile-panel reveal">
           <div class="profile-photo">
-            <img src="./assets/profile.png" alt="Portrait of Chandana Pagudala" />
+            <img src="./assets/Chandanaprofilepic.png" alt="Portrait of Chandana Pagudala" />
           </div>
           <div class="profile-meta">
-            <h2>Nagesh Bachanagoni</h2>
+            <h2>Chandana Pagudala</h2>
             <p>Data Analyst & BI Developer · Montgomery, Alabama</p>
             <div class="social-links">
-              <a class="btn btn-secondary" href="https://www.linkedin.com/in/nagesh-bachanagoni-b84346153/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn btn-secondary" href="https://github.com/bachanagoninagesh" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/chandana-pagudala-4b8684214/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn btn-secondary" href="https://github.com/Chandanapagudala/ChandanaPagudala.github.io" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
         </aside>
@@ -483,18 +566,14 @@ Recent M.S. Computer Science graduate from Auburn University at Montgomery with 
         <div class="eyebrow">About</div>
         <h2 class="section-title reveal">Analytics, BI, and data quality work with measurable business impact.</h2>
         <p class="section-copy reveal">
-          I am currently pursuing an M.S. in Computer Science at Auburn University at Montgomery with a 3.5 GPA,
-          while building toward Data Quality Analyst and BI Analyst roles. My experience includes dashboard design,
-          ETL workflow development, SQL performance tuning, and structured data validation for enterprise reporting.
+          I hold an M.S. in Computer Science and have hands‑on experience in BI reporting, ETL pipeline development, SQL optimization, and data quality validation. My work spans dashboard design, anomaly detection, and building structured data workflows that improve reporting accuracy and operational efficiency. I am actively pursuing roles in Data Quality, BI Analysis, and Data Engineering.
         </p>
 
         <div class="about-grid">
           <div class="card panel reveal">
             <h3>What I do</h3>
             <p>
-              I build reporting solutions that connect business data to decisions. My work includes developing Power BI dashboards,
-              writing advanced T-SQL queries and stored procedures, creating ETL processes, and improving data quality through validation,
-              anomaly detection, and root-cause analysis.
+             I develop dashboards and write analytical queries to support enterprise reporting. I also build ETL processes and strengthen data quality through validation checks, anomaly detection, and root‑cause analysis, ensuring that business decisions are backed by clean and trustworthy data.
             </p>
           </div>
           <div class="card panel reveal">
@@ -518,95 +597,318 @@ Recent M.S. Computer Science graduate from Auburn University at Montgomery with 
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="eyebrow">Projects</div>
-        <h2 class="section-title reveal">Selected work from my professional experience</h2>
-        <p class="section-copy reveal">
-          These project summaries are written directly from my resume and reflect the analytics, reporting, and data quality solutions I worked on professionally.
+<section class="section" id="projects">
+
+<div class="container">
+
+<div class="eyebrow">Projects</div>
+
+<h2 class="section-title">
+Power BI Dashboard Portfolio
+</h2>
+
+<p class="section-copy">
+A collection of dashboard projects built from my professional experience using Power BI, SQL queries, DAX, data modeling, and core Business Intelligence practices.
+</p>
+
+<div class="projects-grid">
+
+<!-- Dashboard 1 -->
+
+<article class="card project">
+
+<img class="project-image"
+src="./assets/Dashboard1.png">
+
+<div class="project-top">
+<h3>Retail Sales Summary Dashboard</h3>
+<span class="year">Power BI</span>
+</div>
+
+<div class="project-body">
+
+<p>
+Analyzed sales trends, regional performance, category contribution and profitability across multiple years.
+</p>
+
+<div class="tag-list">
+<span class="tag">Power BI</span>
+<span class="tag">DAX</span>
+<span class="tag">SQL</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Dashboard 2 -->
+
+<article class="card project">
+
+<img class="project-image"
+src="./assets/Dashboard2.png">
+
+<div class="project-top">
+<h3>Walmart Sales Dashboard</h3>
+<span class="year">Power BI</span>
+</div>
+
+<div class="project-body">
+
+<p>
+Evaluated weekly sales performance, holidays, CPI, fuel price and unemployment impact on sales.
+</p>
+
+<div class="tag-list">
+<span class="tag">Power BI</span>
+<span class="tag">Analytics</span>
+<span class="tag">DAX</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Dashboard 3 -->
+
+<article class="card project">
+
+<img class="project-image"
+src="./assets/Dashboard3.png">
+
+<div class="project-top">
+<h3>Big Mart Sales Dashboard</h3>
+<span class="year">Power BI</span>
+</div>
+
+<div class="project-body">
+
+<p>
+Analyzed product categories, outlet performance, pricing and customer purchasing behavior.
+</p>
+
+<div class="tag-list">
+<span class="tag">Power BI</span>
+<span class="tag">Business Intelligence</span>
+<span class="tag">Data Modeling</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Dashboard 4 -->
+
+<article class="card project">
+
+<img class="project-image"
+src="./assets/Dashboard4.png">
+
+<div class="project-top">
+<h3>Amazon Prime Video Dashboard</h3>
+<span class="year">Power BI</span>
+</div>
+
+<div class="project-body">
+
+<p>
+Visualized content distribution by genres, ratings, countries and release trends.
+</p>
+
+<div class="tag-list">
+<span class="tag">Power BI</span>
+<span class="tag">Data Visualization</span>
+<span class="tag">DAX</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Dashboard 5 -->
+
+<article class="card project">
+
+<img class="project-image"
+src="./assets/Dashboard5.png">
+
+<div class="project-top">
+<h3>Smoking Risk Health Analysis Dashboard</h3>
+<span class="year">Power BI</span>
+</div>
+
+<div class="project-body">
+
+<p>
+Studied relationships among smoking habits, age, BMI, cholesterol and health risks.
+</p>
+
+<div class="tag-list">
+<span class="tag">Power BI</span>
+<span class="tag">Healthcare Analytics</span>
+<span class="tag">DAX</span>
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+            <section class="section" id="reports">
+
+<div class="container">
+
+<div class="eyebrow">Reports</div>
+
+<h2 class="section-title">
+Project Documentation
+</h2>
+
+<p class="section-copy">
+Detailed project reports explaining business requirements, data models, DAX calculations, insights and findings.
+</p>
+
+<div class="report-gallery">
+
+<!-- Report 1 -->
+
+<div class="report-card">
+
+    <img src="./assets/Report1.png"
+         alt="Retail Sales Report">
+
+    <div class="report-info">
+
+        <h3>Retail Sales Dashboard Report</h3>
+
+        <p>
+            Detailed analysis of sales trends, category performance,
+            profit ratios, regional contributions, data model design,
+            DAX calculations and business insights.
         </p>
 
-        <div class="projects-grid">
-          <article class="card project reveal">
-            <a class="project-image-link" href="https://github.com/bachanagoninagesh/Fleet-Management-BI-Report" target="_blank" rel="noreferrer">
-              <img class="project-image" src="./assets/project1.png" alt="Fleet Management Dashboard preview" />
-            </a>
-            <div class="project-top">
-              <h3>Fleet Management Dashboard</h3>
-              <span class="year">2021–2023</span>
-            </div>
-            <div class="project-body">
-              <p>
-                Built Power BI reports integrating SQL Server, Excel, and SharePoint to monitor fleet KPIs. The solution improved workshop efficiency by 30%
-                and reduced vehicle downtime by 25% through reporting visibility, profiling checks, and performance-tuned T-SQL extraction logic.
-              </p>
-              <div class="tag-list">
-                <span class="tag">Power BI</span>
-                <span class="tag">SQL Server</span>
-                <span class="tag">T-SQL</span>
-                <span class="tag">SharePoint</span>
-              </div>
-              <div class="hero-actions" style="margin-top: 1rem;">
-                <a class="btn btn-secondary" href="https://drive.google.com/file/d/11GpVjfZysm_ZPhs31gWY9yB1elzZkulZ/view" target="_blank" rel="noreferrer">Live Demo</a>
-                <a class="btn btn-secondary" href="https://github.com/bachanagoninagesh/Fleet-Management-BI-Report" target="_blank" rel="noreferrer">View Project</a>
-              </div>
-            </div>
-          </article>
+        <a href="./assets/Report1.png"
+           target="_blank"
+           class="report-btn">
+           View Report
+        </a>
 
-          <article class="card project reveal">
-            <a class="project-image-link" href="https://github.com/bachanagoninagesh/Sales-Analysis-Report" target="_blank" rel="noreferrer">
-              <img class="project-image" src="./assets/project2.png" alt="Sales Analysis Report preview" />
-            </a>
-            <div class="project-top">
-              <h3>Sales Analysis Report</h3>
-              <span class="year">2021–2023</span>
-            </div>
-            <div class="project-body">
-              <p>
-                Developed Power BI dashboards with complex DAX measures for sales forecasting, trend analysis, KPI tracking, and pricing insight.
-                The reports supported discount strategy decisions and contributed to a 20% increase in annual sales by surfacing actionable business insights.
-              </p>
-              <div class="tag-list">
-                <span class="tag">Power BI</span>
-                <span class="tag">DAX</span>
-                <span class="tag">Analytics</span>
-                <span class="tag">T-SQL</span>
-              </div>
-              <div class="hero-actions" style="margin-top: 1rem;">
-                <a class="btn btn-secondary" href="https://drive.google.com/file/d/1MqJ8B7TKjl9G3kMjqcaPej8diMBRzN6I/view" target="_blank" rel="noreferrer">Live Demo</a>
-                <a class="btn btn-secondary" href="https://github.com/bachanagoninagesh/Sales-Analysis-Report" target="_blank" rel="noreferrer">View Project</a>
-              </div>
-            </div>
-          </article>
+    </div>
 
-          <article class="card project reveal">
-            <a class="project-image-link" href="https://github.com/bachanagoninagesh" target="_blank" rel="noreferrer">
-              <img class="project-image" src="./assets/project3.png" alt="Customer Master Management System preview" />
-            </a>
-            <div class="project-top">
-              <h3>Customer Master Management System</h3>
-              <span class="year">2021–2023</span>
-            </div>
-            <div class="project-body">
-              <p>
-                Designed and deployed a Canvas App using Power Apps with a Dataverse backend and Power Automate multi-stage approval workflows.
-                The solution streamlined customer information requests and strengthened data integrity across UAT, SIT, and Production environments.
-              </p>
-              <div class="tag-list">
-                <span class="tag">Power Apps</span>
-                <span class="tag">Dataverse</span>
-                <span class="tag">Power Automate</span>
-                <span class="tag">Data Governance</span>
-              </div>
-              <div class="hero-actions" style="margin-top: 1rem;">
-                <a class="btn btn-secondary" href="https://github.com/bachanagoninagesh" target="_blank" rel="noreferrer">Live Demo</a>
-                <a class="btn btn-secondary" href="https://github.com/bachanagoninagesh" target="_blank" rel="noreferrer">View Project</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+</div>
+
+<!-- Report 2 -->
+
+<div class="report-card">
+
+    <img src="./assets/Report2.png"
+         alt="Walmart Sales Report">
+
+    <div class="report-info">
+
+        <h3>Walmart Sales Dashboard Report</h3>
+
+        <p>
+            Analysis of weekly sales performance, holiday sales,
+            CPI impact, fuel prices, unemployment trends,
+            DAX measures and business findings.
+        </p>
+
+        <a href="./assets/Report2.png"
+           target="_blank"
+           class="report-btn">
+           View Report
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Report 3 -->
+
+<div class="report-card">
+
+    <img src="./assets/Report3.png"
+         alt="Big Mart Sales Report">
+
+    <div class="report-info">
+
+        <h3>Big Mart Sales Dashboard Report</h3>
+
+        <p>
+            Comprehensive report covering outlet performance,
+            product categories, pricing strategy, sales analysis,
+            KPIs and dashboard implementation details.
+        </p>
+
+        <a href="./assets/Report3.png"
+           target="_blank"
+           class="report-btn">
+           View Report
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Report 4 -->
+
+<div class="report-card">
+
+    <img src="./assets/Report4.png"
+         alt="Amazon Prime Video Report">
+
+    <div class="report-info">
+
+        <h3>Amazon Prime Video Dashboard Report</h3>
+
+        <p>
+            Content analytics report including genre analysis,
+            ratings distribution, country breakdowns,
+            release trends and business insights.
+        </p>
+
+        <a href="./assets/Report4.png"
+           target="_blank"
+           class="report-btn">
+           View Report
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Report 5 -->
+
+<div class="report-card">
+
+    <img src="./assets/Report5.png"
+         alt="Smoking Risk Health Analysis Report">
+
+    <div class="report-info">
+
+        <h3>Smoking Risk Health Analysis Report</h3>
+
+        <p>
+            Healthcare analytics report examining smoking habits,
+            BMI, cholesterol, blood pressure risks,
+            organ conditions and health indicators.
+        </p>
+
+        <a href="./assets/Report5.png"
+           target="_blank"
+           class="report-btn">
+           View Report
+        </a>
+
+    </div>
+
+</div>
+</section>
 
     <section class="section" id="contact">
       <div class="container">
@@ -621,31 +923,31 @@ Recent M.S. Computer Science graduate from Auburn University at Montgomery with 
           <div class="card panel reveal">
             <h3>Get in touch</h3>
             <div class="contact-list">
-              <a class="contact-item" href="mailto:nageshbachanagoni@gmail.com">
+              <a class="contact-item" href="mailto:Chandana3949@gmail.com">
                 <div>
                   <small>Email</small>
-                  <strong>nageshbachanagoni@gmail.com</strong>
+                  <strong>Chandana3949@gmail.com</strong>
                 </div>
                 <span>↗</span>
               </a>
               <div class="contact-item">
                 <div>
                   <small>Phone</small>
-                  <strong>(334) 895-7949</strong>
+                  <strong>(334) 557-3949</strong>
                 </div>
                 <span>•</span>
               </div>
               <a class="contact-item" href="https://www.linkedin.com/in/nagesh-bachanagoni-b84346153/" target="_blank" rel="noreferrer">
                 <div>
                   <small>LinkedIn</small>
-                  <strong>linkedin.com/in/nagesh-bachanagoni</strong>
+                  <strong>linkedin.com/in/Chandana-Pagudala</strong>
                 </div>
                 <span>↗</span>
               </a>
-              <a class="contact-item" href="https://github.com/bachanagoninagesh" target="_blank" rel="noreferrer">
+              <a class="contact-item" href="https://github.com/Chandanapagudala/ChandanaPagudala-portfolio.github.io" target="_blank" rel="noreferrer">
                 <div>
                   <small>GitHub</small>
-                  <strong>github.com/bachanagoninagesh</strong>
+                  <strong>github.com/ChandanaPagudala</strong>
                 </div>
                 <span>↗</span>
               </a>
@@ -655,9 +957,8 @@ Recent M.S. Computer Science graduate from Auburn University at Montgomery with 
           <div class="card panel reveal">
             <h3>Education & certifications</h3>
             <p>
-              M.S. Computer Science, Auburn University at Montgomery (GPA 3.5), Jan 2024 – Dec 2025.<br /><br />
-              Certifications include Azure Fundamentals (AZ-900), Power BI Data Analyst Associate (PL-300),
-              Power Platform Fundamentals (PL-900), Power Platform App Maker (PL-100), SAS Programming, and Shopify Essential Training.
+              M.S. Computer Science, Auburn University at Montgomery (GPA 3.5), Jan 2024 – May 2025.<br /><br />
+              Certifications include Azure Fundamentals (AZ-900)
             </p>
           </div>
         </div>
@@ -667,7 +968,7 @@ Recent M.S. Computer Science graduate from Auburn University at Montgomery with 
 
   <footer>
     <div class="container footer-row">
-      <span>© <span id="year"></span> Nagesh Bachanagoni</span>
+      <span>© <span id="year"></span> Chandana Pagudala</span>
       <span>Built for analytics, BI, and data-focused roles.</span>
     </div>
   </footer>
