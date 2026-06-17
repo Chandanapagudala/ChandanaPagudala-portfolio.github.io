@@ -318,6 +318,26 @@
       margin: 0 0 1rem;
       color: var(--muted);
     }
+    .dashboard-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1rem;
+    padding:.75rem 1rem;
+    border-radius:14px;
+    background:linear-gradient(
+      135deg,
+      var(--accent),
+      #8b5cf6
+    );
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.dashboard-btn:hover{
+    transform:translateY(-2px);
+}
     /* =========================
    REPORTS SECTION
 ========================= */
@@ -517,48 +537,51 @@
 </h1>
 
 <p>
-Recent M.S. Computer Science graduate from Auburn University at Montgomery with hands-on experience in Power BI, SQL, Python, DAX, Data Modeling, ETL Processes, and Business Intelligence reporting. Passionate about transforming raw data into meaningful insights through interactive dashboards and data-driven decision making.
+
 </p>
-            Data Analyst and BI Developer with 3+ years of experience designing enterprise dashboards, engineering ETL pipelines,
-            and delivering data-driven insights using Power BI, T-SQL, SQL Server, and Power Automate.
-            I specialize in data profiling, validation, anomaly detection, and root-cause analysis for business reporting systems.
+            Recent M.S. Computer Science graduate with 3+ years of professional experience developing Power BI dashboards, writing analytical queries, and engineering ETL workflows. I have built multiple BI and data quality solutions using Power BI, SQL, Python, DAX, data modeling, and automation tools. I specialize in transforming raw data into meaningful insights through validation, anomaly detection, and root‑cause analysis to support accurate, decision‑driven reporting.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
-          </div>
+        <div class="hero-actions">
+  <a class="btn btn-primary" href="#projects">View Projects</a>
+  <a class="btn btn-secondary" href="#contact">Contact Me</a>
+</div>
 
-          <div class="stats">
-            <div class="stat">
-              <strong>3+</strong>
-              <span>Years Experience</span>
-            </div>
-            <div class="stats">
+<!-- STATS SECTION -->
+<div class="stats">
+  <div class="stat">
+    <strong>3+</strong>
+    <span>Years Experience</span>
+  </div>
 
-    <div class="stat">
-        <strong>5</strong>
-        <span>Power BI Projects</span>
+  <div class="stat">
+    <strong>5</strong>
+    <span>Power BI Projects</span>
+  </div>
+
+  <div class="stat">
+    <strong>MS</strong>
+    <span>Computer Science</span>
+  </div>
+</div>
+
+<!-- PROFILE PANEL (RIGHT SIDE) -->
+<aside class="card profile-panel reveal">
+  <div class="profile-photo">
+    <img src="./assets/Chandanaprofilepic.png" alt="Portrait of Chandana Pagudala" />
+  </div>
+
+  <div class="profile-meta">
+    <h2>Chandana Pagudala</h2>
+    <p>Data Analyst & BI Developer · Montgomery, Alabama</p>
+
+    <div class="social-links">
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/chandana-pagudala-4b8684214/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="btn btn-secondary" href="https://github.com/Chandanapagudala" target="_blank" rel="noreferrer">GitHub</a>
     </div>
+  </div>
+</aside>
 
-    <div class="stat">
-        <strong>MS</strong>
-        <span>Computer Science</span>
-    </div>
-        <aside class="card profile-panel reveal">
-          <div class="profile-photo">
-            <img src="./assets/Chandanaprofilepic.png" alt="Portrait of Chandana Pagudala" />
-          </div>
-          <div class="profile-meta">
-            <h2>Chandana Pagudala</h2>
-            <p>Data Analyst & BI Developer · Montgomery, Alabama</p>
-            <div class="social-links">
-              <a class="btn btn-secondary" href="https://www.linkedin.com/in/chandana-pagudala-4b8684214/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn btn-secondary" href="https://github.com/Chandanapagudala/ChandanaPagudala.github.io" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </div>
-        </aside>
-      </div>
     </section>
 
     <section class="section" id="about">
@@ -630,6 +653,11 @@ src="./assets/Dashboard1.png">
 <p>
 Analyzed sales trends, regional performance, category contribution and profitability across multiple years.
 </p>
+  <a href="./assets/Dashboard1.png"
+   target="_blank"
+   class="dashboard-btn">
+   View Dashboard
+</a>
 
 <div class="tag-list">
 <span class="tag">Power BI</span>
@@ -658,6 +686,11 @@ src="./assets/Dashboard2.png">
 <p>
 Evaluated weekly sales performance, holidays, CPI, fuel price and unemployment impact on sales.
 </p>
+  <a href="./assets/Dashboard2.png"
+   target="_blank"
+   class="dashboard-btn">
+   View Dashboard
+</a>
 
 <div class="tag-list">
 <span class="tag">Power BI</span>
@@ -686,6 +719,11 @@ src="./assets/Dashboard3.png">
 <p>
 Analyzed product categories, outlet performance, pricing and customer purchasing behavior.
 </p>
+  <a href="./assets/Dashboard3.png"
+   target="_blank"
+   class="dashboard-btn">
+   View Dashboard
+</a>
 
 <div class="tag-list">
 <span class="tag">Power BI</span>
@@ -714,6 +752,11 @@ src="./assets/Dashboard4.png">
 <p>
 Visualized content distribution by genres, ratings, countries and release trends.
 </p>
+  <a href="./assets/Dashboard4.png"
+   target="_blank"
+   class="dashboard-btn">
+   View Dashboard
+</a>
 
 <div class="tag-list">
 <span class="tag">Power BI</span>
@@ -742,6 +785,11 @@ src="./assets/Dashboard5.png">
 <p>
 Studied relationships among smoking habits, age, BMI, cholesterol and health risks.
 </p>
+  <a href="./assets/Dashboard5.png"
+   target="_blank"
+   class="dashboard-btn">
+   View Dashboard
+</a>
 
 <div class="tag-list">
 <span class="tag">Power BI</span>
@@ -923,10 +971,10 @@ Detailed project reports explaining business requirements, data models, DAX calc
           <div class="card panel reveal">
             <h3>Get in touch</h3>
             <div class="contact-list">
-              <a class="contact-item" href="mailto:Chandana3949@gmail.com">
+              <a class="contact-item" href="mailto:Chandanac681@gmail.com">
                 <div>
                   <small>Email</small>
-                  <strong>Chandana3949@gmail.com</strong>
+                  <strong>Chandanac681@gmail.com</strong>
                 </div>
                 <span>↗</span>
               </a>
@@ -937,14 +985,14 @@ Detailed project reports explaining business requirements, data models, DAX calc
                 </div>
                 <span>•</span>
               </div>
-              <a class="contact-item" href="https://www.linkedin.com/in/nagesh-bachanagoni-b84346153/" target="_blank" rel="noreferrer">
+              <a class="contact-item" href="https://www.linkedin.com/in/chandana-pagudala-4b8684214/" target="_blank" rel="noreferrer">
                 <div>
                   <small>LinkedIn</small>
                   <strong>linkedin.com/in/Chandana-Pagudala</strong>
                 </div>
                 <span>↗</span>
               </a>
-              <a class="contact-item" href="https://github.com/Chandanapagudala/ChandanaPagudala-portfolio.github.io" target="_blank" rel="noreferrer">
+              <a class="contact-item" href="https://github.com/Chandanapagudala" target="_blank" rel="noreferrer">
                 <div>
                   <small>GitHub</small>
                   <strong>github.com/ChandanaPagudala</strong>
